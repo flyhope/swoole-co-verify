@@ -1,0 +1,3 @@
+[submodule "php-reflection-code"]
+	path = php-reflection-code
+	url = https://github.com/flyhope/php-reflection-code.git
