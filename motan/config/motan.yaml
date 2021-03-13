@@ -1,0 +1,43 @@
+motan-agent:
+  port: 9981
+  mport: 9992
+  log_dir: "stdout"
+  registry: "direct-registry"
+  application: "agent-test"
+  httpProxyMaxRequestBodySize: 1000
+  httpProxyEnable: true
+
+motan-registry:
+  direct-server-registry:
+    protocol: direct
+  direct-registry:
+    protocol: direct
+    host: localhost
+    port: 9990
+
+motan-service:
+  li-chengxuan-swoole:
+    path: li.chengxuan.swoole
+    export: "motan2:9990"
+    provider: http
+    HTTP_REQUEST_METHOD: GET
+    URL_FORMAT: http://127.0.0.1:9502/motan/%s
+#    HTTP_URL: http://127.0.0.1:9502/motan
+    group: motan-server-mesh-example # group name
+    registry: "direct-server-registry" # registry id
+#    protocol: motan2 # rpc protocol
+#    filter: "accessLog" # filter registed in extFactory
+#    serialization: simple
+##    nodeType: server
+#    connectRetryInterval: 100
+
+motan-refer:
+  li-chengxuan-swoole:
+    path: li.chengxuan.swoole
+    group: motan-server-mesh-example # group name
+    protocol: motan2 # rpc protocol
+    registry: direct-registry
+    requestTimeout: 1000
+    serialization: simple
+#    haStrategy: failover
+    connectRetryInterval: 100

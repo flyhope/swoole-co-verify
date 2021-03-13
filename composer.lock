@@ -1,0 +1,101 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1fa1b4596b11bd03f64b7252eb9342b2",
+    "packages": [
+        {
+            "name": "motan/motan-php",
+            "version": "v1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weibocom/motan-php.git",
+                "reference": "fa5fcd9f89b01a94048a93a82bc67bc1aa2f6b9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weibocom/motan-php/zipball/fa5fcd9f89b01a94048a93a82bc67bc1aa2f6b9a",
+                "reference": "fa5fcd9f89b01a94048a93a82bc67bc1aa2f6b9a",
+                "shasum": ""
+            },
+            "require": {
+                "wei-breeze/breeze": "dev-release-v0.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7"
+            },
+            "bin": [
+                "weibo-protoc-gen-php.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Motan\\": "src/Motan/"
+                }
+            },
+            "description": "Motan For PHP",
+            "support": {
+                "source": "https://github.com/weibocom/motan-php/tree/v1.1.6",
+                "issues": "https://github.com/weibocom/motan-php/issues"
+            },
+            "time": "2020-05-12T06:05:22+00:00"
+        },
+        {
+            "name": "wei-breeze/breeze",
+            "version": "dev-release-v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weibreeze/breeze-php.git",
+                "reference": "1a1ca1edbbaca9f0825d72fac2c7ed0395367bc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weibreeze/breeze-php/zipball/1a1ca1edbbaca9f0825d72fac2c7ed0395367bc7",
+                "reference": "1a1ca1edbbaca9f0825d72fac2c7ed0395367bc7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.0.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to varint serialize"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Breeze\\": "src/Breeze"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "cross-language serialization for PHP",
+            "homepage": "https://github.com/weibreeze/breeze-php",
+            "keywords": [
+                "multi-language",
+                "serialize"
+            ],
+            "support": {
+                "issues": "https://github.com/weibreeze/breeze-php/issues",
+                "source": "https://github.com/weibreeze/breeze-php/tree/v0.1.0"
+            },
+            "time": "2019-08-14T07:19:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

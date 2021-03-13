@@ -1,0 +1,21 @@
+{
+  "name": "flyhope/swoole-co-verify",
+  "description": "swoole co verify",
+  "type": "project",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "flyhope",
+      "email": "i@chengxuan.li"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/weibocom/motan-php.git"
+    }
+  ],
+  "require": {
+    "motan/motan-php": "v1.1.6"
+  }
+}
