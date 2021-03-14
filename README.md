@@ -1,13 +1,3 @@
-## Need
-
-### php extension
-```ini
-extension=zip
-extension=sockets
-extension=bcmath
-extension=swoole
-```
-
 ## Usage
 
 ### init
@@ -26,5 +16,11 @@ motan-go -c ./motan/config/motan.yaml
 
 ### start test
 ```bash
-php ./motan/main.php
+php -c ./config/php-cli.ini --ini ./main.php
 ```
+
+## Result
+
+* motan: yes
+* memcached: no
+* EasySwooleMemcache: not support ascii

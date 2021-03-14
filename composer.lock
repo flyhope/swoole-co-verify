@@ -4,8 +4,101 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fa1b4596b11bd03f64b7252eb9342b2",
+    "content-hash": "3ae34b19ff13cf03de8890dd874e2261",
     "packages": [
+        {
+            "name": "easyswoole/memcache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/memcache.git",
+                "reference": "f3827a7d55e2ab043f5dc1429a4c26578754bd19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/memcache/zipball/f3827a7d55e2ab043f5dc1429a4c26578754bd19",
+                "reference": "f3827a7d55e2ab043f5dc1429a4c26578754bd19",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/spl": "^1.1"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": ">=1.0.0",
+                "easyswoole/swoole-ide-helper": "^1.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Memcache\\": "src/",
+                    "EasySwoole\\Memcache\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Coroutine version of Memcache client",
+            "support": {
+                "issues": "https://github.com/easy-swoole/memcache/issues",
+                "source": "https://github.com/easy-swoole/memcache/tree/1.0.1"
+            },
+            "time": "2020-06-06T11:45:08+00:00"
+        },
+        {
+            "name": "easyswoole/spl",
+            "version": "1.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/spl.git",
+                "reference": "ecbf9ac61b729e2c9b32e64998c57a78eec76f82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/spl/zipball/ecbf9ac61b729e2c9b32e64998c57a78eec76f82",
+                "reference": "ecbf9ac61b729e2c9b32e64998c57a78eec76f82",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Spl\\": "src/",
+                    "EasySwoole\\Spl\\Test\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "php stander lib",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "support": {
+                "issues": "https://github.com/easy-swoole/spl/issues",
+                "source": "https://github.com/easy-swoole/spl/tree/1.3.10"
+            },
+            "time": "2021-01-19T12:08:25+00:00"
+        },
         {
             "name": "motan/motan-php",
             "version": "v1.1.6",
@@ -92,7 +185,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "easyswoole/memcache": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -6,6 +6,7 @@ motan-agent:
   application: "agent-test"
   httpProxyMaxRequestBodySize: 1000
   httpProxyEnable: true
+  requestTimeout: 2000
 
 motan-registry:
   direct-server-registry:
@@ -25,6 +26,7 @@ motan-service:
 #    HTTP_URL: http://127.0.0.1:9502/motan
     group: motan-server-mesh-example # group name
     registry: "direct-server-registry" # registry id
+    requestTimeout: 2000
 #    protocol: motan2 # rpc protocol
 #    filter: "accessLog" # filter registed in extFactory
 #    serialization: simple
@@ -37,7 +39,7 @@ motan-refer:
     group: motan-server-mesh-example # group name
     protocol: motan2 # rpc protocol
     registry: direct-registry
-    requestTimeout: 1000
+    requestTimeout: 2000
     serialization: simple
 #    haStrategy: failover
     connectRetryInterval: 100
