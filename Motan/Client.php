@@ -31,19 +31,4 @@ class Client extends \Scv\Comm\MClient
             var_dump($e->getMessage());
         }
     }
-    
-//    public static function start() {
-//        \Scv\Comm\Verify::client(1, function () {
-//            $max = 10;
-//            $obj = new self();
-//            $obj->_channel = new \Swoole\Coroutine\Channel(1);
-//            for ($i = 0; $i < $max; ++$i) {
-//                \Swoole\Coroutine::create([$obj, 'execute']);
-//            }
-//
-//            for ($i = 0; $i < $max; ++$i) {
-//                $obj->_channel->pop();
-//            }
-//        });
-//    }
 }

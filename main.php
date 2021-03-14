@@ -28,6 +28,7 @@ class verifyMain {
 
 run(function () {
     $verify = new verifyMain();
+    $verify->run('curl', '\Scv\Curl\Main::run');
     $verify->run('Motan', '\Scv\Motan\Main::run');
     $verify->run('Memcached', '\Scv\Memcached\Main::run');
     

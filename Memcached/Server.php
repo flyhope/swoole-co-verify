@@ -54,7 +54,7 @@ class Server
 
                     // set data
                     if (strpos($data, 'test') !== false) {
-//                        sleep(1);
+                        sleep(1);
                         $conn->send("VALUE test 1 1\r\na\r\n");
                     }
                 }
